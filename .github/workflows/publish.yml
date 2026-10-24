@@ -1,0 +1,40 @@
+name: Publish to MCP Registry
+
+on:
+  push:
+    branches: [main]
+    paths: ["servers/**", ".github/workflows/publish.yml"]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # GitHub OIDC sign-in to the registry, no secrets
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install mcp-publisher 1.8.4 (checksum checked)
+        run: |
+          base=https://github.com/modelcontextprotocol/registry/releases/download/v1.8.4
+          curl -sSL -o mcp-publisher_linux_amd64.tar.gz "$base/mcp-publisher_linux_amd64.tar.gz"
+          curl -sSL -o checksums.txt "$base/registry_1.8.4_checksums.txt"
+          grep " mcp-publisher_linux_amd64.tar.gz$" checksums.txt | sha256sum -c -
+          tar xzf mcp-publisher_linux_amd64.tar.gz mcp-publisher
+
+      - name: Log in to the MCP Registry (GitHub OIDC)
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish every server
+        run: |
+          failed=0
+          for f in servers/*.server.json; do
+            echo "== $f"
+            out=$(./mcp-publisher publish "$f" 2>&1) && echo "$out" || {
+              echo "$out"
+              echo "$out" | grep -qi "already exists\|duplicate version" || failed=1
+            }
+          done
+          exit $failed

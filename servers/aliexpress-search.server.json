@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/aliexpress-search",
+  "title": "AliExpress Search: Best Selling Products by Exact Orders",
+  "description": "Search AliExpress by keyword: price, discount, exact order count, rating, shipping, best sellers.",
+  "repository": {
+    "url": "https://github.com/serenido/aliexpress-search-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/aliexpress-search-reliable",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/aliexpress-search-reliable"
+    }
+  ]
+}

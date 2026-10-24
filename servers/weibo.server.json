@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/weibo",
+  "title": "Weibo: Posts, Hot Searches, Comments & Creators (微博)",
+  "description": "Weibo (微博) data without login: hot searches, posts by keyword, comments, creator profiles.",
+  "repository": {
+    "url": "https://github.com/serenido/weibo-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/weibo-scraper",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/weibo-scraper"
+    }
+  ]
+}

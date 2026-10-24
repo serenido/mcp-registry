@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/bilibili",
+  "title": "Bilibili: Videos, Comments, Danmaku & Creators (B站)",
+  "description": "Bilibili (B站) data without login: video stats, comments, danmaku, creators, trending, hot searches.",
+  "repository": {
+    "url": "https://github.com/serenido/bilibili-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/bilibili-scraper",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/bilibili-scraper"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/football-xg",
+  "title": "Football xG: Understat Matches, Shots & Tables",
+  "description": "Understat football xG data: xG tables, matches, shots, players and lineups for top 5 leagues + RFPL.",
+  "repository": {
+    "url": "https://github.com/serenido/football-xg-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/football-xg-scraper",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/football-xg-scraper"
+    }
+  ]
+}

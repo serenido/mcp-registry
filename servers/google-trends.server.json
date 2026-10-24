@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/google-trends",
+  "title": "Google Trends: Interest Over Time, Rising Queries, Trending Now",
+  "description": "Google Trends data as JSON: interest over time, rising and top queries, regions, Trending Now.",
+  "repository": {
+    "url": "https://github.com/serenido/google-trends-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/google-trends-reliable",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/google-trends-reliable"
+    }
+  ]
+}

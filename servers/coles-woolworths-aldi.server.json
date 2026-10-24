@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/coles-woolworths-aldi",
+  "title": "Australian Supermarket Prices: Coles, Woolworths & ALDI",
+  "description": "Search Coles, Woolworths and ALDI at once: prices, unit prices, specials, cheapest store per item.",
+  "repository": {
+    "url": "https://github.com/serenido/coles-woolworths-aldi-scraper",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/serenido/au-supermarket-prices",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/au-supermarket-prices"
+    }
+  ]
+}
