@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.serenido/rednote-trending",
   "title": "RedNote Trending (小红书): Viral Notes, Full Text & Likes",
-  "description": "RedNote (Xiaohongshu 小红书) trending notes without login: full text, images, video, tags, likes, comments.",
+  "description": "RedNote (Xiaohongshu 小红书) trending notes, no login: full text, images, video, tags, likes, saves.",
   "repository": {
     "url": "https://github.com/serenido/rednote-trending-scraper",
     "source": "github"
