@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/1688-product-details",
+  "title": "1688 Product Details: Wholesale Prices, Variants & Suppliers",
+  "description": "1688.com products by link or id, no login: price tiers, variant stock, specs, supplier, in English.",
+  "websiteUrl": "https://apify.com/serenido/1688-product-details",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/1688-product-details"
+    }
+  ]
+}
