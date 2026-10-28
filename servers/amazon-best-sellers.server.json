@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/amazon-best-sellers",
+  "title": "Amazon Best Sellers: Top 100 Products, Prices & Ratings",
+  "description": "Top 100 of any Amazon Best Sellers list on 21 Amazon sites, no login: rank, price, stars, ratings.",
+  "websiteUrl": "https://apify.com/serenido/amazon-best-sellers",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/amazon-best-sellers"
+    }
+  ]
+}
