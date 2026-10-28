@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/tiktok-shop-product-details",
+  "title": "TikTok Shop Product Details: Price, Sold Count & Reviews",
+  "description": "TikTok Shop products by link or id, no login: price, sold count, rating, variant stock, shipping.",
+  "websiteUrl": "https://apify.com/serenido/tiktok-shop-product-details",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/tiktok-shop-product-details"
+    }
+  ]
+}
