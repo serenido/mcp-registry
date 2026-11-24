@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/1688-image-search",
+  "title": "1688 Image Search: Find Factories & Suppliers by Photo",
+  "description": "Find 1688.com factories by product photo, no login: variant price, min order, sold count, supplier.",
+  "websiteUrl": "https://apify.com/serenido/1688-image-search",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/1688-image-search"
+    }
+  ]
+}
