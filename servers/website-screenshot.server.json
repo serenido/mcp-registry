@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.serenido/website-screenshot",
+  "title": "Website Screenshot: Full Page, Mobile & PDF Capture",
+  "description": "Screenshots of any website, no login: full page or first screen, mobile, PNG, JPEG, WebP or PDF.",
+  "websiteUrl": "https://apify.com/serenido/website-screenshot",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=serenido/website-screenshot"
+    }
+  ]
+}
